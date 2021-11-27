@@ -170,7 +170,7 @@ void audio_update_volume(struct MPContext *mpctx)
     gain *= compute_replaygain(mpctx);
     if (opts->softvol_mute == 1)
         gain = 0.0;
-
+//오늘은 대충 여기까지 보고 이따가 하기
     ao_set_gain(ao_c->ao, gain);
 }
 
